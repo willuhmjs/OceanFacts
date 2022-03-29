@@ -496,7 +496,7 @@ const facts = [
     "Categories": "biology"
   },
   {
-    "Fact": "Seahorses do not have stomachs",
+    "Fact": "Seahorses do not have stomachs.",
     "Categories": "biology"
   },
   {
