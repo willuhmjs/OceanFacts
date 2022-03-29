@@ -136,7 +136,7 @@ const facts = [
     "Categories": "biology"
   },
   {
-    "Fact": "The scientific name for sea sponges, Phylum Porifera, translates to \"pore bearers.",
+    "Fact": "The scientific name for sea sponges, Phylum Porifera, translates to \"pore bearers.\"",
     "Categories": "biology"
   },
   {
