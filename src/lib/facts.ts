@@ -2,7 +2,7 @@ type Category = 'chemistry' | 'biology' | 'geology' | 'physics' | 'engineering';
 
 export interface Fact {
   fact: string;
-  categories: Category[] | null;
+  categories: Category[];
 }
 
 export const facts: Fact[] = [
@@ -52,11 +52,11 @@ export const facts: Fact[] = [
   },
   {
     fact: 'The Pacific Ocean was named by Portuguese navigator Ferdinand Magellan.',
-    categories: null
+    categories: ['history']
   },
   {
     fact: 'The original name for the Pacific Ocean is Tepre Pacificum, which means "peaceful sea" in English.',
-    categories: null
+    categories: ['history']
   },
   {
     fact: 'The Atlantic Ocean was named after Atlas from Greek mythology.',
@@ -256,7 +256,7 @@ export const facts: Fact[] = [
   },
   {
     fact: 'The Polynesians were the first to mount long-distance, open-ocean expeditions in specialized catamarans.',
-    categories: null
+    categories: ['history']
   },
   {
     fact: 'The Challenger expedition (1858) was the first ocean expedition organized and funded for scientific purposes.',
@@ -288,15 +288,15 @@ export const facts: Fact[] = [
   },
   {
     fact: 'The Woods Hole Oceanographic Institution is the largest private non-profit oceanographic institution in the world.',
-    categories: null
+    categories: ['history']
   },
   {
     fact: 'The National Oceanic and Atmospheric Administration is an American federal agency focused on the oceans and the atmosphere.',
-    categories: null
+    categories: ['history']
   },
   {
     fact: 'The National Oceanic and Atmospheric Administration is an American federal agency responsible for daily weather forecasts.',
-    categories: null
+    categories: ['history']
   },
   {
     fact: 'Some submarines can be drones controlled by AI (autonomous underwater vehicles.)',
@@ -328,7 +328,7 @@ export const facts: Fact[] = [
   },
   {
     fact: 'The Chesapeake Bay watershed covers 64,000 square miles or 165,759 square kilometers.',
-    categories: null
+    categories: ['geology']
   },
   {
     fact: 'The average depth of the Chesapeake Bay is 21 feet.',
@@ -380,7 +380,7 @@ export const facts: Fact[] = [
   },
   {
     fact: "90% of an iceberg is submerged below the water's surface.",
-    categories: null
+    categories: ['geology']
   },
   {
     fact: 'Red and yellow light is unseeable below 10 meters.',
@@ -408,7 +408,7 @@ export const facts: Fact[] = [
   },
   {
     fact: 'Hirohito of Japan was an avid marine biologist.',
-    categories: null
+    categories: ['history']
   },
   {
     fact: 'Bigfin squids are deep-sea squids with long thin arms and an alien-like appearance.',
@@ -485,5 +485,338 @@ export const facts: Fact[] = [
   {
     fact: 'The Great Barrier Reef is a secondary coast.',
     categories: ['geology']
+  },
+  {
+    fact: 'The Mariana Trench is the deepest part of the world\'s oceans, reaching a depth of over 36,000 feet (10,972 meters).',
+    categories: ['geology']
+  },
+  {
+    fact: 'The longest mountain range on Earth is the Mid-Atlantic Ridge, which runs through the Atlantic Ocean and is more than 40,000 miles (64,000 kilometers) long.',
+    categories: ['geology']
+  },
+  {
+    fact: 'The Gulf Stream is a warm ocean current that influences the climate of the East Coast of the United States and Western Europe.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Ocean currents help distribute heat around the planet, playing a critical role in regulating global climate.',
+    categories: ['physics']
+  },
+  {
+    fact: 'A tsunami is a series of large ocean waves caused by underwater earthquakes or volcanic eruptions.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Tides are caused by the gravitational pull of the moon and the sun on Earth\'s oceans.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Ocean acidification, a result of increased carbon dioxide in the atmosphere, is harming marine life, especially coral reefs.',
+    categories: ['chemistry']
+  },
+  {
+    fact: 'The Sargasso Sea is a unique region in the North Atlantic Ocean known for its floating mats of Sargassum seaweed.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Some species of fish, like the clownfish, have a mutualistic relationship with sea anemones, where both benefit from the association.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Krill, tiny shrimp-like creatures, are a vital food source for many marine animals, including whales and penguins.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Many species of deep-sea creatures, such as anglerfish, have bioluminescent adaptations to attract prey or mates in the dark ocean depths.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The "Blue Hole" in Belize is a famous underwater sinkhole, a popular spot for diving and exploring unique marine ecosystems.',
+    categories: ['geology']
+  },
+  {
+    fact: 'The Bermuda Triangle, located in the western part of the North Atlantic Ocean, is known for its mysterious disappearances of ships and planes.',
+    categories: ['geology']
+  },
+  {
+    fact: 'The world\'s largest coral reef system, the Great Barrier Reef, is home to an incredibly diverse range of marine species.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Shipwrecks in the ocean serve as artificial reefs, providing habitats for marine life and opportunities for diving enthusiasts.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Red Sea gets its name from the occasional blooms of red-colored algae, creating stunning underwater landscapes.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Gulf of Mexico is known for its frequent hurricanes, which can have significant impacts on marine ecosystems and coastal communities.',
+    categories: ['geology']
+  },
+  {
+    fact: 'Oceanographers use submersibles and remotely operated vehicles (ROVs) to explore the ocean\'s depths and study its unique environments.',
+    categories: ['engineering']
+  },
+  {
+    fact: 'The Marlin, a popular sport fish, can swim at speeds of up to 82 miles per hour (132 kilometers per hour).',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Antarctic Circumpolar Current is the largest ocean current on Earth, flowing clockwise around Antarctica and connecting all major oceans.',
+    categories: ['geology']
+  },
+  {
+    fact: 'In the deep ocean, hydrothermal vents support thriving communities of extremophiles, organisms adapted to high-temperature and high-pressure conditions.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The "Bloop" was a mysterious underwater sound recorded in the Pacific Ocean, initially thought to be an unknown sea creature but later attributed to icequakes.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Some species of jellyfish are virtually immortal, capable of reverting to an earlier life stage when faced with unfavorable conditions.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The ocean is a vast carbon sink, absorbing and storing a significant amount of carbon dioxide from the atmosphere.',
+    categories: ['chemistry']
+  },
+  {
+    fact: 'The Southern Ocean, surrounding Antarctica, is the youngest of the world\'s oceans and was recognized as a distinct ocean only in recent decades.',
+    categories: ['geology']
+  },
+  {
+    fact: 'Mangrove forests, found in coastal regions, provide important nurseries for many marine species and protect shorelines from erosion.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Some marine animals, like sea otters, use tools such as rocks to crack open shellfish for food.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Bloop" was a mysterious underwater sound recorded in the Pacific Ocean, initially thought to be an unknown sea creature but later attributed to icequakes.',
+    categories: ['physics']
+  },
+  {
+    fact: 'The Mariana Trench is the deepest part of the world\'s oceans, reaching a depth of over 36,000 feet (10,972 meters).',
+    categories: ['geology']
+  },
+  {
+    fact: 'The longest mountain range on Earth is the Mid-Atlantic Ridge, which runs through the Atlantic Ocean and is more than 40,000 miles (64,000 kilometers) long.',
+    categories: ['geology']
+  },
+  {
+    fact: 'The Gulf Stream is a warm ocean current that influences the climate of the East Coast of the United States and Western Europe.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Ocean currents help distribute heat around the planet, playing a critical role in regulating global climate.',
+    categories: ['physics']
+  },
+  {
+    fact: 'A tsunami is a series of large ocean waves caused by underwater earthquakes or volcanic eruptions.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Tides are caused by the gravitational pull of the moon and the sun on Earth\'s oceans.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Ocean acidification, a result of increased carbon dioxide in the atmosphere, is harming marine life, especially coral reefs.',
+    categories: ['chemistry']
+  },
+  {
+    fact: 'The Sargasso Sea is a unique region in the North Atlantic Ocean known for its floating mats of Sargassum seaweed.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Some species of fish, like the clownfish, have a mutualistic relationship with sea anemones, where both benefit from the association.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Krill, tiny shrimp-like creatures, are a vital food source for many marine animals, including whales and penguins.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Many species of deep-sea creatures, such as anglerfish, have bioluminescent adaptations to attract prey or mates in the dark ocean depths.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The "Blue Hole" in Belize is a famous underwater sinkhole, a popular spot for diving and exploring unique marine ecosystems.',
+    categories: ['geology']
+  },
+  {
+    fact: 'The Bermuda Triangle, located in the western part of the North Atlantic Ocean, is known for its mysterious disappearances of ships and planes.',
+    categories: ['geology']
+  },
+  {
+    fact: 'The world\'s largest coral reef system, the Great Barrier Reef, is home to an incredibly diverse range of marine species.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Shipwrecks in the ocean serve as artificial reefs, providing habitats for marine life and opportunities for diving enthusiasts.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Red Sea gets its name from the occasional blooms of red-colored algae, creating stunning underwater landscapes.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Gulf of Mexico is known for its frequent hurricanes, which can have significant impacts on marine ecosystems and coastal communities.',
+    categories: ['geology']
+  },
+  {
+    fact: 'Oceanographers use submersibles and remotely operated vehicles (ROVs) to explore the ocean\'s depths and study its unique environments.',
+    categories: ['engineering']
+  },
+  {
+    fact: 'The Marlin, a popular sport fish, can swim at speeds of up to 82 miles per hour (132 kilometers per hour).',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Antarctic Circumpolar Current is the largest ocean current on Earth, flowing clockwise around Antarctica and connecting all major oceans.',
+    categories: ['geology']
+  },
+  {
+    fact: 'In the deep ocean, hydrothermal vents support thriving communities of extremophiles, organisms adapted to high-temperature and high-pressure conditions.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The "Bloop" was a mysterious underwater sound recorded in the Pacific Ocean, initially thought to be an unknown sea creature but later attributed to icequakes.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Some species of jellyfish are virtually immortal, capable of reverting to an earlier life stage when faced with unfavorable conditions.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The ocean is a vast carbon sink, absorbing and storing a significant amount of carbon dioxide from the atmosphere.',
+    categories: ['chemistry']
+  },
+  {
+    fact: 'The Southern Ocean, surrounding Antarctica, is the youngest of the world\'s oceans and was recognized as a distinct ocean only in recent decades.',
+    categories: ['geology']
+  },
+  {
+    fact: 'Mangrove forests, found in coastal regions, provide important nurseries for many marine species and protect shorelines from erosion.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Some marine animals, like sea otters, use tools such as rocks to crack open shellfish for food.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Bloop" was a mysterious underwater sound recorded in the Pacific Ocean, initially thought to be an unknown sea creature but later attributed to icequakes.',
+    categories: ['physics']
+  },
+  {
+    fact: 'The Mariana Trench is the deepest part of the world\'s oceans, reaching a depth of over 36,000 feet (10,972 meters).',
+    categories: ['geology']
+  },
+  {
+    fact: 'The longest mountain range on Earth is the Mid-Atlantic Ridge, which runs through the Atlantic Ocean and is more than 40,000 miles (64,000 kilometers) long.',
+    categories: ['geology']
+  },
+  {
+    fact: 'The Gulf Stream is a warm ocean current that influences the climate of the East Coast of the United States and Western Europe.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Ocean currents help distribute heat around the planet, playing a critical role in regulating global climate.',
+    categories: ['physics']
+  },
+  {
+    fact: 'A tsunami is a series of large ocean waves caused by underwater earthquakes or volcanic eruptions.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Tides are caused by the gravitational pull of the moon and the sun on Earth\'s oceans.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Ocean acidification, a result of increased carbon dioxide in the atmosphere, is harming marine life, especially coral reefs.',
+    categories: ['chemistry']
+  },
+  {
+    fact: 'The Sargasso Sea is a unique region in the North Atlantic Ocean known for its floating mats of Sargassum seaweed.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Some species of fish, like the clownfish, have a mutualistic relationship with sea anemones, where both benefit from the association.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Krill, tiny shrimp-like creatures, are a vital food source for many marine animals, including whales and penguins.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Many species of deep-sea creatures, such as anglerfish, have bioluminescent adaptations to attract prey or mates in the dark ocean depths.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The "Blue Hole" in Belize is a famous underwater sinkhole, a popular spot for diving and exploring unique marine ecosystems.',
+    categories: ['geology']
+  },
+  {
+    fact: 'The Bermuda Triangle, located in the western part of the North Atlantic Ocean, is known for its mysterious disappearances of ships and planes.',
+    categories: ['geology']
+  },
+  {
+    fact: 'The world\'s largest coral reef system, the Great Barrier Reef, is home to an incredibly diverse range of marine species.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Shipwrecks in the ocean serve as artificial reefs, providing habitats for marine life and opportunities for diving enthusiasts.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Red Sea gets its name from the occasional blooms of red-colored algae, creating stunning underwater landscapes.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Gulf of Mexico is known for its frequent hurricanes, which can have significant impacts on marine ecosystems and coastal communities.',
+    categories: ['geology']
+  },
+  {
+    fact: 'Oceanographers use submersibles and remotely operated vehicles (ROVs) to explore the ocean\'s depths and study its unique environments.',
+    categories: ['engineering']
+  },
+  {
+    fact: 'The Marlin, a popular sport fish, can swim at speeds of up to 82 miles per hour (132 kilometers per hour).',
+    categories: ['biology']
+  },
+  {
+    fact: 'The Antarctic Circumpolar Current is the largest ocean current on Earth, flowing clockwise around Antarctica and connecting all major oceans.',
+    categories: ['geology']
+  },
+  {
+    fact: 'In the deep ocean, hydrothermal vents support thriving communities of extremophiles, organisms adapted to high-temperature and high-pressure conditions.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The "Bloop" was a mysterious underwater sound recorded in the Pacific Ocean, initially thought to be an unknown sea creature but later attributed to icequakes.',
+    categories: ['physics']
+  },
+  {
+    fact: 'Some species of jellyfish are virtually immortal, capable of reverting to an earlier life stage when faced with unfavorable conditions.',
+    categories: ['biology']
+  },
+  {
+    fact: 'The ocean is a vast carbon sink, absorbing and storing a significant amount of carbon dioxide from the atmosphere.',
+    categories: ['chemistry']
+  },
+  {
+    fact: 'The Southern Ocean, surrounding Antarctica, is the youngest of the world\'s oceans and was recognized as a distinct ocean only in recent decades.',
+    categories: ['geology']
+  },
+  {
+    fact: 'Mangrove forests, found in coastal regions, provide important nurseries for many marine species and protect shorelines from erosion.',
+    categories: ['biology']
+  },
+  {
+    fact: 'Some marine animals, like sea otters, use tools such as rocks to crack open shellfish for food.',
+    categories: ['biology']
   }
 ];
+
