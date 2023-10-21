@@ -2,9 +2,9 @@
     import "$lib/style.css";
     import { facts, type Fact } from "$lib/facts";
 
+	let currentFact: Fact;
 	const randomFact = (): Fact => currentFact = facts[Math.floor(Math.random() * facts.length)];
-	var currentFact = randomFact();
-
+	randomFact();
  </script>
 
 <div class="fs-5">
@@ -30,8 +30,16 @@
 			</div>
 		</section>
 		<section class="mt-4">
-			<div id="categories" />
-			<blockquote class="blockquote border-start border-5 rounded p-5 bg-light" />
+			<div id="categories">
+				{#if currentFact.Categories}
+					{#each currentFact.Categories as category}
+						<p class="badge bg-secondary me-1">{category}</p>
+					{/each}
+				{/if}
+				</div>
+			<blockquote class="blockquote border-start border-5 rounded p-5 bg-light">
+				{currentFact.Fact}
+			</blockquote>
 		</section>
 		<br />
 		<br />
