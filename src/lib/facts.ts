@@ -267,7 +267,7 @@ export const facts: Fact[] = [
     categories: ['engineering']
   },
   {
-    fact: 'The Alvin submarine costs $30,000 dollars per day to operate.',
+    fact: 'The Alvin submarine costs 30,000 dollars per day to operate.',
     categories: ['engineering']
   },
   {
@@ -275,7 +275,7 @@ export const facts: Fact[] = [
     categories: ['engineering']
   },
   {
-    fact: 'The Alvin submarine is equipped with 2 manipular arms, 5 view ports, and life support for 3 people.',
+    fact: 'The Alvin submarine is equipped with 2 manipular arms, 5 viewports, and life support for 3 people.',
     categories: ['engineering']
   },
   {
@@ -355,7 +355,7 @@ export const facts: Fact[] = [
     categories: ['physics']
   },
   {
-    fact: '6 inches of fast moving water can knock an adult off their feet.',
+    fact: '6 inches of fast-moving water can knock an adult off their feet.',
     categories: ['physics']
   },
   {
@@ -819,4 +819,3 @@ export const facts: Fact[] = [
     categories: ['biology']
   }
 ];
-
