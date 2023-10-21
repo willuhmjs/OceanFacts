@@ -1,8 +1,10 @@
-<script>
+<script lang="ts">
     import "$lib/style.css";
-    import facts from "$lib/facts";
+    import { facts, type Fact } from "$lib/facts";
 
-	const randomFact = () => console.log(facts[Math.floor(Math.random() * facts.length)]);
+	const randomFact = (): Fact => currentFact = facts[Math.floor(Math.random() * facts.length)];
+	var currentFact = randomFact();
+
  </script>
 
 <div class="fs-5">

@@ -1,12 +1,12 @@
 type Category = 'chemistry' | 'biology' | 'geology' | 'physics' | 'engineering';
 
-interface Fact {
+export interface Fact {
 	Fact: string;
 	Categories: Category[] | null;
 }
 
 
-const facts: Fact[] = [
+export const facts: Fact[] = [
 	{
 		Fact: "71% of Earth's surface is covered by water; 97% of this water is ocean water.",
 		Categories: ['chemistry']
@@ -489,5 +489,3 @@ const facts: Fact[] = [
 	}
 ];
 	
-
-export default facts
