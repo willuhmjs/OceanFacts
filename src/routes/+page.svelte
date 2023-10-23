@@ -31,14 +31,14 @@
 		</section>
 		<section class="mt-4">
 			<div id="categories">
-				{#if currentFact.Categories}
-					{#each currentFact.Categories as category}
+				{#if currentFact.categories}
+					{#each currentFact.categories as category}
 						<p class="badge bg-secondary me-1">{category}</p>
 					{/each}
 				{/if}
 				</div>
 			<blockquote class="blockquote border-start border-5 rounded p-5 bg-light">
-				{currentFact.Fact}
+				{currentFact.fact}
 			</blockquote>
 		</section>
 		<br />
